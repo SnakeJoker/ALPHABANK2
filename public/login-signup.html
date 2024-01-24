@@ -1,0 +1,76 @@
+<!-- login-signup.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/login.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>
+            Alpha Bank - Iniciar sesión /
+            Registrarse
+        </title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <h4 id="logo-h1">Alpha Bank</h4>
+                </a>
+            </div>
+        </header>
+        <main>
+            <h1>Iniciar sesión / Registrarse</h1>
+            <section id="section-form">
+                <div id="login-div">
+                    <h2>Iniciar sesión</h2>
+                    <form id="login-form">
+                        <input
+                            type="text"
+                            id="login-username"
+                            placeholder="Nombre de usuario"
+                        />
+                        <input
+                            type="password"
+                            id="login-password"
+                            placeholder="Contraseña"
+                        />
+                        <button type="submit">
+                            Iniciar sesión
+                        </button>
+                    </form>
+                </div>
+                <div id="signup-div">
+                    <h2>Registrarse</h2>
+                    <form id="signup-form">
+                        <input
+                            type="text"
+                            id="signup-username"
+                            placeholder="Nombre de usuario"
+                        />
+                        <input
+                            type="email"
+                            id="signup-email"
+                            placeholder="Correo electrónico"
+                        />
+                        <input
+                            type="password"
+                            id="signup-password"
+                            placeholder="Contraseña"
+                        />
+                        <button type="submit">
+                            Registrarse
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2024 Alpha Bank. Todos los
+                derechos reservados.
+            </p>
+        </footer>
+        <script src="js/app.js"></script>
+    </body>
+</html>

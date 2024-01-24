@@ -1,0 +1,47 @@
+/* CSS */
+.divdiv {
+    margin-top: -3.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del botón deslizante */
+.slider {
+    margin-top: -2rem;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+
+/* Estilo del botón cuando está activado */
+.slider.active {
+    background: linear-gradient(to right, #00d2ff, #3a47d5);
+}
+
+.slider.active:before {
+    left: calc(100% - 90px);
+}

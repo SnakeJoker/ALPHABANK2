@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/profile.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="css/slider.css" />
+		<title>Alpha Bank</title>
+	</head>
+	<body>
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+			var Tawk_API = Tawk_API || {},
+				Tawk_LoadStart = new Date();
+			(function () {
+				var s1 = document.createElement("script"),
+					s0 = document.getElementsByTagName("script")[0];
+				s1.async = true;
+				s1.src = "https://embed.tawk.to/6508ae180f2b18434fd93b9e/1hakug4fn";
+				s1.charset = "UTF-8";
+				s1.setAttribute("crossorigin", "*");
+				s0.parentNode.insertBefore(s1, s0);
+			})();
+		</script>
+		<!--End of Tawk.to Script-->
+		<header>
+			<nav id="nav-bar-profile">
+				<div class="logo">
+					<h4>Alpha Bank</h4>
+				</div>
+				<ul>
+					<li>
+						<button id="logout-button">Cerrar sesión</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div id="bienbenido-div">
+				<h1>Bienvenida</h1>
+				<h1 id="username">username</h1>
+			</div>
+			<div id="trigger"></div>
+			<!-- <div id="panel">
+				<div id="balance-div">
+					<img
+						id="moneda"
+						src="https://images.vexels.com/media/users/3/266058/isolated/preview/1355772349a91d6fd6ea7ee29c9c5f50-icono-de-dinero-de-moneda-de-signo-de-da-lar.png"
+						alt="imagen-moneda"
+					/>
+					<h2>Balance Wallet:</h2>
+					<h2 id="balance">balance</h2>
+				</div>
+				<div id="amount-div">
+					<img
+						id="moneda"
+						src="https://images.vexels.com/media/users/3/266058/isolated/preview/1355772349a91d6fd6ea7ee29c9c5f50-icono-de-dinero-de-moneda-de-signo-de-da-lar.png"
+						alt="imagen-moneda"
+					/>
+					<h2>Historial Total:</h2>
+					<h2 id="balance">USD $1,300,00.00</h2>
+				</div>
+				<div id="amount-div">
+					<img
+						id="moneda"
+						src="https://images.vexels.com/media/users/3/266058/isolated/preview/1355772349a91d6fd6ea7ee29c9c5f50-icono-de-dinero-de-moneda-de-signo-de-da-lar.png"
+						alt="imagen-moneda"
+					/>
+					<h2>Deuda Pendiente:</h2>
+					<h2 id="balance">USD $0.00</h2>
+				</div>
+			</div> -->
+			<section>
+				<div id="advertencia">
+					<img
+						src="https://www.pngkey.com/png/full/193-1939939_be-aware-of-the-signs-that-you-need.png"
+						alt="triangulo-advertencia"
+					/>
+					<!-- <img
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Check_green_circle.svg/2048px-Check_green_circle.svg.png"
+						alt="checkverde"
+					/> -->
+					<h1>AVISO</h1>
+					<h1>TRANSACCIÓN COMPROMETIDA</h1>
+					<p>
+						El sistema ha reportado que se han registrado correctamente 2 de 3
+						transacciones, las transacciones se han visto comprometidas debido a la
+						incapacidad de la cuenta de un tercero para aceptar la conversión a pesos
+						mexicanos las transacciones que se registraron de manera exitosa se ven
+						comprometidas de no actualizarse en un plazo de 48 horas pueden pasar a no
+						procesables y perderse.
+					</p>
+				</div>
+			</section>
+			<section id="transacciones">
+				<div class="transaccion" id="transaccion1">
+					<h2>Transacción 1</h2>
+					<p>Nombre: Susana Crampón</p>
+					<p>Monto: USD 500,000</p>
+					<p>Cuenta: <span id="estado1">SCOTIABANK : XXXXXXXX</span></p>
+					<p>Estado:<br /><span id="estado1">Transaccion Confirmada</span></p>
+					<p>
+						Monto en pesos mexicanos:<br />
+						<span id="estado1">MXP 8,582,500.00</span>
+					</p>
+				</div>
+
+				<div class="transaccion" id="transaccion2">
+					<h2>Transacción 2</h2>
+					<p>Nombre: Susana Crampón</p>
+					<p>Monto: USD 300,000</p>
+					<p>Cuenta: <span id="estado1">SCOTIABANK : XXXXXXXX</span></p>
+					<p>Estado:<br /><span id="estado2">Transaccion Confirmada</span></p>
+					<p>
+						Monto en pesos mexicanos:<br /><span id="estado2">MXP 5,149,500.00</span>
+					</p>
+				</div>
+
+				<div class="transaccion" id="transaccion3">
+					<h2>Transacción 3</h2>
+					<p>Nombre: Arturo Gomez</p>
+					<p>Monto: USD 350,000</p>
+					<p>Cuenta: <span id="estado3">CIBANCO : XXXXXXXX</span></p>
+					<p>
+						Estado:<br /><span id="estado3"
+							>Error en la transaccion, sin capacidad de recepcion pesos
+							mexicanos.</span
+						>
+					</p>
+					<p>Monto en pesos mexicanos:<br />No Disponoble.</p>
+				</div>
+			</section>
+			<!-- <div class="divdiv">
+				<p>
+					Al activar, ( con el nuevo codigo), este botón, se reflejará
+					automáticamente todo el capital pendiente.
+				</p>
+				<div class="slider"></div>
+				<script src="profile.js"></script>
+			</div> -->
+			<!-- <div class="reloj_arena">
+				<h1>Tiempo para Pago</h1>
+				<img
+					src="https://i.pinimg.com/originals/b9/df/64/b9df64c8f162c61163bf09d3c5eacb11.gif"
+					alt="reloj-de-arena"
+				/>
+				<div id="contador">00 Días 00 Horas 00 Minutos 00 Segundos</div>
+				<div id="mensaje"></div>
+			</div> -->
+			<!-- <h2 id="trans-h2">Realizar Transacciones</h2>
+			<br />
+			<br />
+			<br /> -->
+			<!-- <section id="form-div">
+				<div id="deposit-div">
+					<form id="deposit-form">
+						<input
+							type="number"
+							id="deposit-amount"
+							placeholder="Monto de depósito"
+							required
+						/>
+						<input
+							type="text"
+							id="deposit-description"
+							placeholder="Descripcion de deposito"
+							required
+						/>
+						<input
+							type="text"
+							pattern="^TRF-KEY=06096AN7232$"
+							placeholder="Foreign Key FK"
+							required
+						/>
+						<input type="text" placeholder="Quien Autoriza" required />
+						<button type="submit">Depositar</button>
+					</form>
+				</div>
+				<div id="withdraw-div">
+					<form id="withdraw-form">
+						<input
+							type="number"
+							id="withdraw-amount"
+							placeholder="Monto de retiro"
+							required
+						/>
+						<input
+							type="text"
+							id="withdraw-description"
+							placeholder="Cuenta Destino"
+							required
+						/>
+						<select class="custom-select" id="Bank" required>
+							<option value="" selected disabled>Banco</option>
+							<option value="BBVA BANCOMER">BBVA BANCOMER</option>
+							<option value="BANAMEX">BANAMEX</option>
+							<option value="SANTANDER">SANTANDER</option>
+							<option value="SCOTIABANK">SCOTIABANK</option>
+							<option value="HSBC">BANCO HSBC</option>
+							<option value="BANK OF AMERICA">BANK OF AMERICA</option>
+							<option value="CIBANCO">CIBANCO</option>
+							<option value="PROMERICA">PROMERICA</option>
+						</select>
+						<input type="text" placeholder="Swift code" required />
+
+						<button type="submit">Retirar</button>
+					</form>
+				</div>
+			</section> -->
+			<!-- <section>
+				<div class="logos-bancos">
+					<div class="div-logo">
+						<img
+							class="img-bancos"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Logo_de_CIBanco.svg/2957px-Logo_de_CIBanco.svg.png"
+							alt="logo CIBANCO"
+						/>
+						<h1>Proceso al 100%</h1>
+					</div>
+					<div class="div-logo">
+						<img
+							class="img-bancos"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Logo_Scotiabank_%28Kanada%29.svg/2560px-Logo_Scotiabank_%28Kanada%29.svg.png"
+							alt="logo SCOTIABANK"
+						/>
+						<h1>Proceso al 100%</h1>
+					</div>
+				</div>
+				<div id="popup" style="display: none">
+					<input type="text" id="nombre" placeholder="Nombre" />
+					<input type="text" id="telefono" placeholder="Número telefónico" />
+					<button id="popup-submit">Enviar</button>
+				</div>
+			</section> -->
+			<!-- <section id="body">
+				<div class="container">
+					<img
+						src="https://i.gifer.com/origin/ac/ac1a6fc199d663a1d844f14b55f7584d.gif"
+						id="reloja"
+					/>
+					<br />
+					<br />
+					<h1 class="blinking-text">
+						<br />
+						Transacción Completada
+						<br />
+						<br />
+						Toda la cola de transacciones fueron recibidas en mexico mas no
+						acreditadas.
+						<br />
+						<br />
+						Debido a facturas a las que debe de realiar pago, las transacciones no se
+						han reflejado,
+						<br />
+						debe de completar los pendientes para que culmine el proceso.
+						<br />
+						<br />
+						intruduzca el numero de factura comprobande de pago
+						<br />
+						Aqui
+						<br />
+						<br />
+						<br />
+					</h1>
+					<img
+						src="https://cdn.pixabay.com/photo/2016/03/31/14/47/download-1292814_640.png"
+						id="flecha_abajo"
+					/>
+				</div>
+			</section> -->
+			<!-- <section>
+				<div>
+					<form id="deposito-btn">
+						<input type="text" placeholder="Numero de Factura" required />
+
+						<button type="submit">Enviar</button>
+					</form>
+				</div>
+			</section> -->
+			<!-- <section>
+				<div>
+					<br />
+					<br />
+					<h1 class="lineas">
+						----------------------------------------------------------------------------------------------------------------------------
+					</h1>
+					<br />
+					<br />
+					<br />
+					<form id="bitcoin-btn">
+						<input
+							type="text"
+							pattern="casocram2023"
+							placeholder="Codigo Bitcoin"
+							required
+						/>
+
+						<button type="submit">Enviar</button>
+					</form>
+				</div>
+			</section> -->
+			<section id="historialt-div">
+				<div>
+					<h2>Historial de Transacciones</h2>
+				</div>
+				<div>
+					<table id="transaction-list">
+						<tr>
+							<th scope="col">Detalle transacción</th>
+							<th scope="col">Monto Deposito/Retiro</th>
+							<th scope="col">Fecha de Transacciones</th>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2024 Alpha Bank. Todos los derechos reservados.</p>
+		</footer>
+		<script src="./js/app.js"></script>
+	</body>
+</html>
